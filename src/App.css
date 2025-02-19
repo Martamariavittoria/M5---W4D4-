@@ -1,0 +1,10 @@
+
+
+/* SIGNLE BOOK */
+.single-book {
+  transition: border 0.2s ease-in-out;
+}
+
+.single-book.selected {
+  border: 3px solid red !important;
+}
