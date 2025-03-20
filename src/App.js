@@ -1,27 +1,22 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter } from 'react-router-dom';
-/* import romanceBooks from './jsonbooks/romance.json'
- */
-import NavbarElement from './Componenti/navbar';
-import FooterElement from './Componenti/footer';
-import WelcomeElement from './Componenti/welcome';
-import AllTheBooksElement from './Componenti/AllTheBooks';
-
+import 'bootstrap/dist/css/bootstrap.min.css' // Import necessario per usare React-Bootstrap
+import CustomNavbar from './components/Navbar'
+import AllTheBooks from './components/AllTheBooks'
+import CustomFooter from './components/Footer'
 
 function App() {
+
   return (
+    <div>
 
-      <div className="App">
-        <BrowserRouter>
-        <NavbarElement />
-        <WelcomeElement />
-        <AllTheBooksElement />
-    
-        <FooterElement />
-        </BrowserRouter>
-      </div>
+      <CustomNavbar />
+      
+ 
+      <AllTheBooks />
 
-  );
+
+      <CustomFooter />
+    </div>
+  )
 }
 
-export default App;
+export default App
